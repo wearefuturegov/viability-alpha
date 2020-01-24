@@ -121,12 +121,12 @@ input, select, textarea {
 
 	body {
 		background-color: #04709e;
-		color: rgba(255, 255, 255, 0.65);
+		color: #fff;
 	}
 
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 17pt;
+		font-size: 20pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
@@ -134,7 +134,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 14pt;
+				font-size: 17pt;
 			}
 
 		}
@@ -142,7 +142,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 15pt;
 			}
 
 		}
@@ -150,23 +150,23 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 14pt;
 			}
 
 		}
 
 	a {
-		-moz-transition: color 0.2s ease, border-bottom 0.2s ease;
+		/* -moz-transition: color 0.2s ease, border-bottom 0.2s ease;
 		-webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
-		transition: color 0.2s ease, border-bottom 0.2s ease;
+		transition: color 0.2s ease, border-bottom 0.2s ease; */
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		border-bottom: dotted 1px #0f5877;
 		color: inherit;
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			border-bottom: solid #04709e 2px;
 		}
 
 	strong, b {
@@ -192,6 +192,7 @@ input, select, textarea {
 			column-gap: 2em;
 			text-align: justify;
 		}
+	
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
@@ -2363,14 +2364,12 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 8px;
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
 		.image img {
-			border-radius: 8px;
 			display: block;
 		}
 
@@ -3001,14 +3000,17 @@ input, select, textarea {
 			display: inline-block;
 			margin-left: 4em;
 			padding: 0.65em;
-			border-radius: 100%;
 			border: solid 1px;
 		}
 
 			.spotlight .image img {
 				display: block;
-				border-radius: 100%;
-				width: 16em;
+				width: 22em;
+			}
+
+			.spotlight .image.wide img {
+				height: 10em;
+				width: auto;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3051,6 +3053,15 @@ input, select, textarea {
 					margin-bottom: 2em;
 				}
 
+				.spotlight .image.wide {
+					padding: 0;
+				}
+				.spotlight .image.wide img {
+					height: auto;
+					width: calc(100% + 3em);
+					margin-left: -1.5em;
+				}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3074,15 +3085,33 @@ input, select, textarea {
 	#header {
 		padding: 5em 5em 1em 5em ;
 		text-align: center;
+		font-weight: 400;
 	}
 
 		#header h1 {
 			margin: 0 0 0.25em 0;
+			font-weight: 500;
 		}
 
 		#header p {
 			font-size: 1.25em;
 			letter-spacing: -0.025em;
+			max-width: 75%;
+			margin: 0 auto;
+		}
+
+		#header .actions {
+			text-align: center;
+			margin-top: 25px;
+		}
+		#header .actions li {
+			margin: 0 auto;
+		}
+		#header .actions li .button {
+			border: 2px solid white;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			line-height: inherit;
 		}
 
 		#header.alt {
@@ -3216,7 +3245,7 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
-		color: #636363;
+		color: #3a3a3a;
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
@@ -3229,19 +3258,19 @@ input, select, textarea {
 	}
 
 		#nav input, #nav select, #nav textarea {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 		#nav a:hover {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 		#nav strong, #nav b {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 		#nav blockquote {
@@ -3305,7 +3334,7 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: rgba(247, 247, 247, 0.95);
+			background-color: rgba(239, 239, 239, 0.95);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
@@ -3335,24 +3364,24 @@ input, select, textarea {
 
 	#main {
 		background-color: #ffffff;
-		color: #636363;
+		color: #3a3a3a;
 		border-radius: 0.25em;
 	}
 
 		#main input, #main select, #main textarea {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 		#main a:hover {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 		#main strong, #main b {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 		#main blockquote {
@@ -3377,9 +3406,9 @@ input, select, textarea {
 		#main input[type="button"],
 		#main button,
 		#main .button {
-			background-color: transparent;
-			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			background-color: #04709e;
+			box-shadow: inset 0 0 0 1px #0f5877;
+			color: #fff !important;
 		}
 
 			#main input[type="submit"]:hover,
@@ -3387,7 +3416,7 @@ input, select, textarea {
 			#main input[type="button"]:hover,
 			#main button:hover,
 			#main .button:hover {
-				background-color: rgba(222, 222, 222, 0.25);
+				background-color: #0f5877;
 			}
 
 			#main input[type="submit"]:active,
@@ -3395,7 +3424,7 @@ input, select, textarea {
 			#main input[type="button"]:active,
 			#main button:active,
 			#main .button:active {
-				background-color: rgba(222, 222, 222, 0.5);
+				background-color: #1195ce;
 			}
 
 			#main input[type="submit"].icon:before,
@@ -3441,7 +3470,7 @@ input, select, textarea {
 				}
 
 		#main label {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 		#main input[type="text"],
@@ -3467,13 +3496,13 @@ input, select, textarea {
 		}
 
 			#main select option {
-				color: #636363;
+				color: #3a3a3a;
 				background: #ffffff;
 			}
 
 		#main input[type="checkbox"] + label,
 		#main input[type="radio"] + label {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 			#main input[type="checkbox"] + label:before,
@@ -3484,8 +3513,8 @@ input, select, textarea {
 
 		#main input[type="checkbox"]:checked + label:before,
 		#main input[type="radio"]:checked + label:before {
-			background-color: #636363;
-			border-color: #636363;
+			background-color: #3a3a3a;
+			border-color: #3a3a3a;
 			color: #ffffff;
 		}
 
@@ -3525,7 +3554,7 @@ input, select, textarea {
 
 		#main .icon.alt {
 			border-color: #dddddd;
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 			#main .icon.alt:hover {
@@ -3541,7 +3570,7 @@ input, select, textarea {
 		}
 
 		#main dl dt {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 		#main header.major h2:after {
@@ -3561,7 +3590,7 @@ input, select, textarea {
 			}
 
 		#main table th {
-			color: #636363;
+			color: #3a3a3a;
 		}
 
 		#main table thead {
@@ -3576,9 +3605,6 @@ input, select, textarea {
 			border-color: #dddddd;
 		}
 
-		#main .spotlight .image {
-			border-color: #dddddd;
-		}
 
 		#main > .main {
 			padding: 5em 5em 3em 5em ;
@@ -3634,7 +3660,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#main > .main {
-				padding: 3em 2em 1em 2em ;
+				padding: 2em 1.5em 1em 1.5em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3647,7 +3673,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#main > .main {
-				padding: 3em 1.5em 1em 1.5em ;
+				padding: 1em 1em 1em 1em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3690,9 +3716,9 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 5em 5em 3em 5em ;
+		padding: 3em;
 		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		margin: 0;
 	}
 
 		#footer > * {
@@ -3700,11 +3726,21 @@ input, select, textarea {
 			margin-left: 2em;
 		}
 
+		#footer p {
+			margin: 0;
+		}
+
 		#footer .copyright {
 			width: 100%;
-			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
 			text-align: center;
+		}
+
+		#footer a {
+			border-bottom: 1px dotted rgba(255, 255, 255, 0.5)
+		}
+		#footer a:hover {
+			border-bottom: 1px solid rgba(255, 255, 255, 1)
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3720,7 +3756,7 @@ input, select, textarea {
 			#footer {
 				padding: 4em 3em 2em 3em ;
 				display: block;
-				margin: 0 0 3em 0;
+				margin: 0;
 				width: 100%;
 			}
 
@@ -3783,3 +3819,26 @@ input, select, textarea {
 			}
 
 		}
+
+
+
+#contact p {
+	max-width: 75%;
+}
+
+@media screen and (max-width: 480px) {
+	#contact p {
+		max-width: 100%;
+	}
+
+	iframe {
+		width: calc(100% + 3em);
+		margin-left: -1.5em;
+		height: 182px;
+	}
+}
+
+#logos {
+	height: 150px;
+	width: auto;
+}
