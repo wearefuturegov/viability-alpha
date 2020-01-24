@@ -99,11 +99,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-color: #04709e;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #0f5877 15%, #04709e 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #0f5877 15%, #04709e 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #0f5877 15%, #04709e 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #0f5877 15%, #04709e 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,7 +120,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #04709e;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -1923,7 +1923,7 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		background-color: transparent;
+		background-color: #04709e;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
 		color: #ffffff !important;
 	}
@@ -2167,7 +2167,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #935d8c;
+			background: #04709e;
 		}
 
 	input[type="checkbox"] + label,
@@ -2185,7 +2185,7 @@ input, select, textarea {
 	input[type="radio"]:checked + label:before {
 		background-color: #ffffff;
 		border-color: #ffffff;
-		color: #935d8c;
+		color: #04709e;
 	}
 
 	input[type="checkbox"]:focus + label:before,
@@ -3545,11 +3545,11 @@ input, select, textarea {
 		}
 
 		#main header.major h2:after {
-			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-color: #04709e;
+			background-image: -moz-linear-gradient(90deg, #1195ce, #04709e, #0f5877);
+			background-image: -webkit-linear-gradient(90deg, #1195ce, #04709e, #0f5877);
+			background-image: -ms-linear-gradient(90deg, #1195ce, #04709e, #0f5877);
+			background-image: linear-gradient(90deg, #1195ce, #04709e, #0f5877);
 		}
 
 		#main table tbody tr {
