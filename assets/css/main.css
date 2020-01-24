@@ -3058,8 +3058,8 @@ input, select, textarea {
 				}
 				.spotlight .image.wide img {
 					height: auto;
-					width: calc(100% + 3em);
-					margin-left: -1.5em;
+					width: calc(100% + 2em);
+					margin-left: -1em;
 				}
 
 		}
@@ -3826,8 +3826,13 @@ input, select, textarea {
 	max-width: 75%;
 }
 
+#logos {
+	height: 150px;
+	width: auto;
+}
+
 @media screen and (max-width: 480px) {
-	#contact p {
+	#contact p, #header p {
 		max-width: 100%;
 	}
 
@@ -3836,9 +3841,10 @@ input, select, textarea {
 		margin-left: -1.5em;
 		height: 182px;
 	}
+
+	#logos {
+		height: auto;
+		width: 100%;
+	}
 }
 
-#logos {
-	height: 150px;
-	width: auto;
-}
